@@ -956,8 +956,8 @@ def showScreen():
         glMatrixMode(GL_MODELVIEW)
 
         if gamee_over:
-            draw_text(340, 380, "GAME  OVER", GLUT_BITMAP_TIMES_ROMAN_24)
-            draw_text(300, 340, f"Final gamescore: {gamescore}", GLUT_BITMAP_TIMES_ROMAN_24)
+            draw_text(340, 380, "GAME  OVER", GLUT_BITMAP_HELVETICA_18)
+            draw_text(300, 340, f"Final gamescore: {gamescore}", GLUT_BITMAP_HELVETICA_18)
             draw_text(270, 300, "[R] Play Again   [G] Exit Game", GLUT_BITMAP_HELVETICA_18)
 
 
@@ -990,7 +990,6 @@ def main():
     glutInitWindowPosition(0, 0)
     glutCreateWindow(b"Solar Sytem")
 
-    glClearColor(0.0, 0.0, 0.02, 1.0)
 
     glutDisplayFunc(showScreen)
     glutKeyboardFunc(keyboardListener)
